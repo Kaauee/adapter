@@ -1,6 +1,6 @@
 package adapterex1;
 
-public class VlcPlayer implements AdvancedMediaPlayer{
+public class VlcPlayer implements AdvancedMediaPlayer {
 
     @Override
     public void playVlc(String fileName) {
@@ -9,7 +9,7 @@ public class VlcPlayer implements AdvancedMediaPlayer{
 
     @Override
     public void playMp4(String fileName) {
-        
+
     }
-    
+
 }
