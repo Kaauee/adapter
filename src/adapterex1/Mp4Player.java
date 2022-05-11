@@ -12,4 +12,9 @@ public class Mp4Player implements AdvancedMediaPlayer {
         System.out.println("Tocando o arquivo MP4. Nome: " + fileName);
     }
 
+    @Override
+    public void playTmb(String fileName) {
+       
+    }
+
 }

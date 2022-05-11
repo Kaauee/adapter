@@ -12,4 +12,9 @@ public class VlcPlayer implements AdvancedMediaPlayer {
 
     }
 
+    @Override
+    public void playTmb(String fileName) {
+        
+    }
+
 }

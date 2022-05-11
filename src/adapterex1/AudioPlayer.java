@@ -9,7 +9,7 @@ public class AudioPlayer implements MediaPlayer {
 
         if (audioType.equalsIgnoreCase("mp3")) {
             System.out.println("Tocando o arquivo MP3. Nome: " + fileName);
-        } else if (audioType.equalsIgnoreCase("vlc") || audioType.equalsIgnoreCase("MP4")) {
+        } else if (audioType.equalsIgnoreCase("vlc") || audioType.equalsIgnoreCase("MP4") || audioType.equalsIgnoreCase("TMB")) {
             mediaAdapter = new MediaAdapter(audioType);
             mediaAdapter.play(audioType, fileName);
         } else {

@@ -10,8 +10,9 @@ public class MediaAdapter implements MediaPlayer {
             advancedMusicPlayer = new VlcPlayer();
         } else if (audioType.equalsIgnoreCase("Mp4")) {
             advancedMusicPlayer = new Mp4Player();
+        } else if (audioType.equalsIgnoreCase("TMB")) {
+            advancedMusicPlayer = new TmbPlayer();
         }
-
     }
 
     @Override
@@ -21,6 +22,8 @@ public class MediaAdapter implements MediaPlayer {
             advancedMusicPlayer.playVlc(fileName);
         } else if (audioType.equalsIgnoreCase("mp4")) {
             advancedMusicPlayer.playMp4(fileName);
+        } else if (audioType.equalsIgnoreCase("TMB")) {
+            advancedMusicPlayer.playTmb(fileName);
         }
     }
 
